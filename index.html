@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div id="obrazac">
+        <h1>App za JSON vježbu</h1>
+        <br>
+        <form action="/home" method="GET">
+            <div class="komponenta">
+                <label for="ime">Ime</label>
+                <br>
+                <input type="text" name="ime" id="ime">
+            </div>
+            <div class="komponenta">
+                <label for="prezime">Prezime</label>
+                <br>
+                <input type="text" name="prezime" id="prezime">
+            </div>
+            <div class="komponenta">
+                <label for="broj-mobitela">Broj Mobitela:</label>
+                <br>
+                <input type="tel" name="brojMobitela" id="broj-mobitela">
+            </div>
+        </form>
+        <form action="/home/podaci" id="drugiObrazac">
+            <button class="full-rounded">
+                <span>Hover me</span>
+                <div class="border full-rounded"></div>
+            </button>
+        </form>
+    </div>
+</body>
+</html>

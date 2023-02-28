@@ -19,7 +19,7 @@ app.get('/home', (req, res)=>{
         prezime: req.query.prezime,
         mobitel: req.query.brojMobitela
     }
-    //osobaString = JSON.stringify(osoba)
+    osobaString = JSON.stringify(osoba)
     //console.log(osobaString)
     //console.log("Dobar dan")
     if(osoba.ime === undefined){

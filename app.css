@@ -78,3 +78,12 @@ button {
     /* Push the button downwards when pressed */
    transform: translateY(0);
   }
+
+  td,th{
+    padding: 4%;
+  }
+
+  input:valid{
+    border-color: greenyellow;
+    border-style: solid;
+  }

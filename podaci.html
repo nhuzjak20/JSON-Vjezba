@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prikaz</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div id="obrazac">
+        <table>
+            <tr>
+                <th>
+                    Ime
+                </th>
+                <th>
+                    Prezime
+                </th>
+                <th>
+                    Broj Mobitela
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Testno ime
+                </td>
+                <td>
+                    Testno Prezime
+                </td>
+                <td>
+                    Testni broj
+                </td>
+            </tr>
+            <% imena.ForEach(function(mascot)){ %>
+                <tr>
+                    <td>
+                        <% imena.ime %>
+                    </td>
+                    <td>
+                        <% imena.prezime %>
+                    </td>
+                    <td>
+                        <% imena.brojMobitela %>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+    </div>
+</body>
+</html>

@@ -11,6 +11,8 @@ const port = 3000;
 
 const app = express()
 app.use(express.static(path.join(__dirname, '/')));
+app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
 
 app.get('/home', (req, res)=>{
     //console.log(req.query.ime)
@@ -33,7 +35,13 @@ app.get('/home', (req, res)=>{
     res.sendFile(__dirname + '/index.html')
 });
 
+app.get('/home/podaci', (req, res)=>{
+    //res.sendFile(__dirname + '/podaci.html')
+    const podaci = fs.readFile('podaci.json')
+    res.render('../podaci.html', )
+});
 
 app.listen(3000, ()=>{
     console.log("Server radi \n\n")
 });
+

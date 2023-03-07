@@ -31,20 +31,24 @@
                     Testni broj
                 </td>
             </tr>
-            <% imena.ForEach(function(mascot)){ %>
+            <!--
+            <%- imena.ForEach(function(mascot)){ %>
                 <tr>
                     <td>
-                        <% imena.ime %>
+                        <-% imena.ime %>
                     </td>
                     <td>
-                        <% imena.prezime %>
+                        <-% imena.prezime %>
                     </td>
                     <td>
-                        <% imena.brojMobitela %>
+                        <-% imena.brojMobitela %>
                     </td>
                 </tr>
-            <% }); %>
+                <h2> <%- podaci %></h2>
+            <%- }); %>
+            -->
         </table>
+        
     </div>
 </body>
 </html>

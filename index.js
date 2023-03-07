@@ -37,8 +37,10 @@ app.get('/home', (req, res)=>{
 
 app.get('/home/podaci', (req, res)=>{
     //res.sendFile(__dirname + '/podaci.html')
-    const podaci = fs.readFile('podaci.json')
-    res.render('../podaci.html', )
+    
+    res.render('../podaci',{
+        podaci: "Ispisani podaci",
+    })
 });
 
 app.listen(3000, ()=>{
